@@ -1,0 +1,64 @@
+@font-face {
+	font-family: 'SFFont';
+	src: url("./fonts/SFProDisplay-Medium.ttf");
+}
+
+@font-face {
+	font-family: 'SFLight';
+	src: url("./fonts/SFProDisplay-Light.ttf");
+}
+
+html, body {
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.container {
+	width: 70%;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.Page {
+	font-family: 'SFFont', 'Times New Roman', serif;
+	background: #11161E;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+}
+
+h1, p, ul, li {
+	padding: 0;
+	margin: 0;
+}
+
+@keyframes animateHeight {
+	from {
+		height: 0;
+		top: 50%;
+	}
+	to {
+		height: 100%;
+		top: 0;
+	}
+}
+
+@keyframes animateHeightTop {
+	0% {
+		height: 0;
+		width: 100%;
+	}
+	50% {
+		height: 0;
+		width: 1px;
+	}
+	100% {
+		height: 100%;
+	}
+}
